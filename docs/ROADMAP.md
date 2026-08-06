@@ -1,12 +1,23 @@
 # 🗺️ Roadmap — atc-ide
 
-## Phase 1: VS Code Syntax & Basic LSP (Q3 2026) - [Erreicht]
-- [x] Syntax Highlighting für ATCLang
-- [x] Basic LSP Server Setup
+> **Repo:** [atc-ide](https://github.com/A-TownChain-Okosystems/atc-ide)
+> **Layer:** L10 | **Stand:** 2026-08-06
 
-## Phase 2: Debugger & JetBrains Support (Q4 2026)
-- [ ] Step-by-Step Debugging in ATVM Simulation
-- [ ] JetBrains IDE Extension Release
+---
 
-## Phase 3: Web-IDE Container (Q1 2027)
-- [ ] Browser-basierte Cloud IDE Integration
+## Sprint-Zuordnung
+
+| Sprint | Phase | Status | Aufgaben |
+|--------|-------|--------|----------|
+| 3.1 | Frontend+Wallet | Geplant | — |
+| 3.2 | AI Studio | Aktiv | — |
+
+## Meilensteine
+
+1. **v0.3** — ATCLang Parser stabil, Basis-Module migriert
+2. **v0.4** — Struct-Inheritance, Kernel-Support, VM Opcodes
+3. **v1.0** — Vollständige Implementierung, Test-Abdeckung >80%
+
+---
+
+*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*

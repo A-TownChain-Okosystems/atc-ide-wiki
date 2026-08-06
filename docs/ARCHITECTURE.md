@@ -1,16 +1,35 @@
-# 🏗️ Architektur — atc-ide
+# 🏛️ Architektur — atc-ide
 
-Das IDE-Repository kapselt Plugins für Entwickler-Editoren und verbindet diese mit dem ATCLang LSP Server.
+> **Repo:** [atc-ide](https://github.com/A-TownChain-Okosystems/atc-ide)
+> **Layer:** L10 | **Titel:** IDE/Playground
+> **Stand:** 2026-08-06 | **Version:** v1.0.0
 
-## Flussdiagramm
+---
 
-```
-[ VS Code / JetBrains / Vim ]
-           |
-     JSON-RPC Protocol
-           v
-   [ ATCLang LSP Server ]
-      /             \
-     v               v
-[ Lexer/Parser ]  [ ATVM Debugger ]
-```
+## Übersicht
+
+ATCLang IDE: Editor, REPL, Debugger, LSP.
+
+## Komponenten
+
+## Abhängigkeiten
+
+Dieses Repo ist Teil des A-TownChain Ökosystems und nutzt:
+- [ATCLang Compiler](https://github.com/A-TownChain-Okosystems/atclang) für .atc Module
+- [ATC Standards](https://github.com/A-TownChain-Okosystems/atc-standards) für Spezifikationen
+- [Haupt-Wiki](https://github.com/A-TownChain-Okosystems/a-townchain-os-docs) für Governance
+
+## Statistik
+
+| Metrik | Wert |
+|--------|------|
+| Code-Dateien | 0 |
+| .atc | 0 |
+| .py | 0 |
+| .rs | 0 |
+| .ts | 0 |
+| Total Zeilen | 0 |
+
+---
+
+*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*
