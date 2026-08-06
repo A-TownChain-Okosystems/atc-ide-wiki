@@ -1,36 +1,39 @@
-# 🌳 Architektur — atc-ide-wiki
+# ARCHITECTURE.md — atc-ide
+> Copyright © Michael Wroblewski / A-TownChain-Okosystems. All Rights Reserved.
 
-> **Stand:** 2026-08-06 | **Commit:** 2e6610f
-> **Teil von:** [A-TownChain Ökosystem](https://github.com/A-TownChain-Okosystems)
-
-## Statistik
-
-| Metrik | Wert |
-|--------|------|
-| Dateien | 11 |
-| Zeilen | 181 |
-| .atc | 0 |
-| .py | 0 |
-| .rs | 0 |
-| .ts/.tsx | 0 |
-| .md | 9 |
-
-## Verzeichnisstruktur
-
-```
-├── docs/ (5 files, 96 lines)
-│   ├── API.md (14 lines)
-│   ├── ARCHITECTURE.md (35 lines)
-│   ├── LSP.md (10 lines)
-│   ├── MODULES.md (14 lines)
-│   └── ROADMAP.md (23 lines)
+## File Tree
+```tree
 ├── .gitignore
-├── FILE_REGISTER.md (18 lines)
+├── CHANGELOG.md
+├── COMPONENT_PLAN.md
+├── FILE_REGISTER.md
 ├── LICENSE
-├── README.md (24 lines)
-├── ROADMAP.md (8 lines)
-└── STATUS.md (35 lines)
+├── README.md
+├── ROADMAP.md
+├── STATUS.md
+├── debugger.atc
+├── editor.atc
+├── lsp_server.atc
+├── package.json
+├── project_manager.atc
+├── repl.atc
+├── src/
+│   ├── debugger/
+│   ├── editor/
+│   ├── index.ts
+│   └── repl/
+├── syntax_highlight.atc
+└── tsconfig.json
 ```
 
----
-*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*
+## Module Descriptions
+- **src/editor/**: Web-based code editor core featuring ATC syntax highlighting, autocompletion, and error diagnostics.
+- **src/debugger/**: Interactive debugging module supporting breakpoints, step-by-step execution, and variable state inspection.
+- **src/repl/**: Interactive Read-Eval-Print Loop terminal interface for real-time ATC snippet evaluation.
+- **package.json** & **tsconfig.json**: Project manifest and TypeScript configuration files.
+
+## Build System
+Node.js / npm environment with TypeScript (`tsc`) compiler and Vite frontend bundler.
+
+## Dependencies
+TypeScript 5.0+, Monaco Editor / CodeMirror, `vscode-languageclient`, `xterm.js` terminal emulator.
